@@ -11,3 +11,6 @@ __pycache__/
 
 # Generated files
 src/quantization_info.txt
+
+# Ignore generated quantization log
+src/quantization_info.txt
