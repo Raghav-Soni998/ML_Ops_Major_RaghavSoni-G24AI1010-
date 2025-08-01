@@ -24,4 +24,10 @@ Docker:
 | Raw Parameters   | src/unquant_params.joblib |
 | Quantized Params | src/quant_params.joblib   |
 
+## Unique Features
+- Custom dataset summary printed before training.
+- Quantization process logs a `quantization_info.txt`.
+- Includes MAE metric in predictions for demonstration.
+
+
 Developed by **Raghav Soni (G24AI1010)**
