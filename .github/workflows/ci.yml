@@ -14,9 +14,11 @@ jobs:
         with:
           python-version: "3.10"
       - run: pip install -r requirements.txt
-      - run: |
-          export PYTHONPATH=$PYTHONPATH:$(pwd)
-          pytest tests/
+      - name: Run pytest with PYTHONPATH
+        run: |
+          echo "PYTHONPATH is $(pwd)"
+          export PYTHONPATH="$(pwd)"
+          python -m pytest tests/
 
   train-and-quantize:
     runs-on: ubuntu-latest
@@ -27,8 +29,10 @@ jobs:
         with:
           python-version: "3.10"
       - run: pip install -r requirements.txt
-      - run: python src/train.py
-      - run: python src/quantize.py
+      - run: |
+          export PYTHONPATH="$(pwd)"
+          python src/train.py
+          python src/quantize.py
 
   build-and-test-container:
     runs-on: ubuntu-latest
