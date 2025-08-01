@@ -1,4 +1,4 @@
-# MLOps Linear Regression Pipeline - By Raghav Soni
+# MLOps Linear Regression Pipeline - By Raghav Soni(G24AI1010)
 
 This repository implements an MLOps pipeline using:
 - Dataset: California Housing (scikit-learn)
