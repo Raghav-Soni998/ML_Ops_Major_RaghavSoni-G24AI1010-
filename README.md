@@ -16,4 +16,12 @@ Docker:
 - `docker build -t mlops-raghav .`
 - `docker run --rm mlops-raghav`
 
+## Comparison Table
+
+| Stage            | Output Files              |
+|------------------|---------------------------|
+| Trained Model    | src/model.joblib          |
+| Raw Parameters   | src/unquant_params.joblib |
+| Quantized Params | src/quant_params.joblib   |
+
 Developed by **Raghav Soni (G24AI1010)**
