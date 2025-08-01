@@ -1,0 +1,13 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# VS Code / PyCharm settings
+.vscode/
+.idea/
+
+# Generated files
+src/quantization_info.txt
