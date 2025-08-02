@@ -50,12 +50,12 @@ In addition to the standard MLOps pipeline requirements, this implementation inc
 
 These additions provide better insight into the pipeline without altering its core functionality.
 
-### Validation of Quantization Results
+### Validation of Quantization Result
 
 After running `python src/quantize.py`, the quantized parameters file 
 (`quant_params.joblib`) is smaller in size than the original parameters file 
 (`unquant_params.joblib`), demonstrating that quantization successfully reduces 
-storage size. For this project:
+storage size.
 
 - quant_params.joblib: ~323 bytes
 - unquant_params.joblib: ~414 bytes
