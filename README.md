@@ -1,5 +1,7 @@
-# MLOps Linear Regression Pipeline
-## Developed by **Raghav Soni (G24AI1010)**
+# MLOps Linear Regression Pipeline (Major Assignment)
+
+![Build Status](https://github.com/Raghav-Soni998/ML_Ops_Major_RaghavSoni-G24AI1010-/actions/workflows/ci.yml/badge.svg)
+
 
 This repository implements an MLOps pipeline using:
 - Dataset: California Housing (scikit-learn)
@@ -41,12 +43,23 @@ In addition to the standard MLOps pipeline requirements, this implementation inc
    <img width="844" height="62" alt="image" src="https://github.com/user-attachments/assets/828d8fd8-2745-4aca-a34e-77ccacbd0289" />
 
 
-5. **Additional metric during prediction**  
+3. **Additional metric during prediction**  
    The prediction script reports **Mean Absolute Error (MAE)** for the first five test samples, alongside predictions and actual values. This additional metric complements the R² and MSE scores from training.
    
    <img width="840" height="59" alt="image" src="https://github.com/user-attachments/assets/fbe4814d-a256-4a34-85f7-62bf6884c97a" />
 
 These additions provide better insight into the pipeline without altering its core functionality.
 
+### Validation of Quantization Results
 
-Developed by **Raghav Soni (G24AI1010)**
+After running `python src/quantize.py`, the quantized parameters file 
+(`quant_params.joblib`) is smaller in size than the original parameters file 
+(`unquant_params.joblib`), demonstrating that quantization successfully reduces 
+storage size. For this project:
+
+- quant_params.joblib: ~323 bytes
+- unquant_params.joblib: ~414 bytes
+
+<img width="978" height="88" alt="image" src="https://github.com/user-attachments/assets/b5430e22-53c0-4cf0-9fc4-dfa3b0fa2054" />
+
+### Developed by **Raghav Soni (G24AI1010)**
